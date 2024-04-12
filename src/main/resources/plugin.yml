@@ -1,0 +1,33 @@
+name: mini-info
+version: '${project.version}'
+main: blue.lhf.mini_info.MiniInfo
+api-version: '1.20'
+prefix: mini-info
+authors: [bluelhf]
+description: Adds minimal on-join message of the day
+
+libraries:
+  - org.apache.commons:commons-text:${commons-text.version}
+
+commands:
+  motd:
+    description: Show or edit the message of the day
+    usage: /command [<motd to set, or none if you want to see the current motd>]
+    aliases: [infomsg]
+
+permissions:
+  mini-info.show_motd_on_join:
+    description: Allows the player to see the message of the day when they join
+    default: true
+
+  mini-info.show_motd_on_command:
+    description: Allows the player to see the message of the day using the /motd command
+    default: true
+
+  mini-info.set_motd:
+    description: Allows the player to set the message of the day
+    default: op
+
+  mini-info.show_guide:
+    description: Allows the player to see the plugin guide if no MOTD is set
+    default: op

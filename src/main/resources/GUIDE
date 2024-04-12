@@ -1,0 +1,5 @@
+Hello! This is the default MOTD of mini-info. You can overwrite this message by adding a new MOTD either by editing /plugins/mini-info/MOTD.txt or by using the command /mini-info motd <message>.
+
+This MOTD won't be shown to regular players, you're seeing it because you're either an operator or have the permission mini-info.sees_guide. If you don't want to see this message, you can remove the permission from yourself or set a MOTD.
+
+mini-info supports MiniMessage!
